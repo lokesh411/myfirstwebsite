@@ -1,31 +1,45 @@
 body{
-    font-family: sans-serif;
+  font-family: sans-serif;
     width: 100%;
     margin: 0;
+
 }
 header{
     height: 130px;
     margin: 2px 70px 2px 70px;
     padding: 2px;
-
 }
 .top{
 height: 40px;
 border-bottom: 1px solid grey;
 }
+.sliinp{
+  text-align:left;
+  margin-left:55px;
+}
+.slibtn{
+  background-color: orange; text-align: center; height: 50px ;width: 120px;
+  color: white;
+  letter-spacing: 0.06em;
+  line-height: 28px;
+  font-size: 14px;
+  font-weight: 900;
+}
 .top-bottom{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.06em;
     top:0;
     height:90px;
     position: sticky;
     margin-top: 10px;
     padding-top: 10px;
 }
-.top-bottom-img{
-float:left;
-}
 .head{
+  float: right;
     list-style-type: none;
-    float: right;
 }
 .head li{
     display: inline-block;
@@ -46,7 +60,7 @@ li a:hover, .top a:hover{
 color: orange;
 }
 .topleft  {
-    color: #212121;
+    color: grey;
     display: block;
     float: left;
     padding: 10px;
@@ -64,14 +78,23 @@ a{
 a :hover{
 background-color: orange;
 }
+.lia{
+  padding-left: 5px;
+}
 li a{
     display: block;
-    padding: 2px 2px 5px 5px;
+    padding: 2px 2px 5px 20px;
 }
 .slider{
     background-image: url(../images/image1.jpg);
     background-size: cover;
-    height: 600px;
+    height: 500px;
+}
+.slinav1{
+  width:100px; margin: 0 auto; padding-top:100px;
+}
+.slinav{
+  width:100px; margin: 0 auto; margin-top:30px;
 }
 .slider-content{
     text-align: center;
@@ -81,28 +104,53 @@ h1{
     font-size: 50px;
 }
 .slider h1{
-    text-align: center; 
+    text-align: center;
     color: white;
 }
 .inner-slider{
-    padding: 150px 300px 100px 300px;
-    text-align: center;
+margin-left: 15px;
+margin-right:15px;
+padding-top:142.5px;
+   text-align: center;
+}
+.inner-slider h1{
+font-size: 45px;
+font-weight: 700;
 }
 .inner-slider-nav ul{
+  font-family: 'lato',Helvetica,Arial,sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  margin-left: 430px;
     list-style-type: none;
     text-align: left;
 }
+.inner-slider-nav li a{
+  color: #c4c4c4;
+}
 .inner-slider-nav li{
     display: inline-block;
-    padding-left: 10px;
+    margin-right: 20px;
+}
+.inner-slider-nav li a:nth-of-type(2), .inner-slider-nav li a:nth-of-type(3){
+    display: inline-block;
+    padding-left:20px;
 }
 .inner-slider-nav a{
     color: azure;
 }
-input 
+.sliinp input
 {
-height: 40px;
-width: 400px;
+  margin-top: 0;
+  margin-left: 420px;
+height: 50px;
+width: 380px;
+margin-bottom: 0px;
+}
+input{
+  margin-top: 0;
+  height: 40px;
+  width:400px;
 }
 .section-list{
     padding-top: 20px;
@@ -113,20 +161,25 @@ width: 400px;
 .section-list-div{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 15px;
-    margin-right:15px;
+    margin: 0 auto;
 }
 .section-list-image{
-    padding:10px;
-    position:relative;
+margin:0 auto;
+display: inline-block;
+position: relative;
+}
+.section-list-image img{
+  border-radius: 5px;
 }
 .image-content{
-    top: 40%;
-    text-align: center;
-    position: absolute;
-    left: 25%;
-    color: aliceblue;
-    
+  top: 70px;
+width: 100%;
+text-align: center;
+position: absolute;
+ color: aliceblue;
+}
+.image-content h3{
+  text-align: center;
 }
 .recent-prop{
     margin: 0px 20px 0px 20px;
@@ -135,6 +188,17 @@ width: 400px;
 .recent-prop-div{
     display: flex;
     flex-wrap: wrap;
+    width:1200px;
+    margin: auto;
+    padding-top: 10px;
+}
+.flexdiv{
+  display: flex;
+  flex-wrap: wrap;
+  width:1300px;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
 }
 .recent-prop-each{
     margin-right:10px;
@@ -153,7 +217,7 @@ width: 370px;
     padding-left: 0px;
 }
 .recent-a{
-    margin-top: 15px;
+    margin-top: 20px;
     height: 40px;
     width: 200px;
     text-align: center;
@@ -194,8 +258,8 @@ width: 370px;
 }
 .agents{
     text-align: left;
-    padding-left:15px;
     width: 270px;
+margin: 0 auto;
 }
 h3{
     text-align: left;
@@ -213,6 +277,7 @@ h5 a{
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 30px;
+    color: white;
 }
 .form{
     padding-top: 10px;
@@ -315,19 +380,21 @@ footer{
     width: 100%;
     list-style-type: none;
 }
+.footer3ul a{
+color: white;
+  }
 .section5{
     margin-top: 40px;
     background-color: #ece9e9;
     height: 500px;
     padding-top: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
     padding-bottom: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .section5each{
 width: 370px;
-margin-right: 20px;
-text-align: center;
+margin: 0 auto;
 }
 .smallimg:before{
     content: '';
@@ -414,4 +481,21 @@ text-align: left;
 }
 .width{
     width:100%;
+}
+.newsletter{
+  width:400px; text-align:left; color: white; margin-right:10px;
+}
+.footer1 p{
+  color: white; padding-left:10px; text-align: left;
+}
+.border{
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+.width li:nth-of-type(2):before, .width li:nth-of-type(3):before{
+  content: '';
+  border-left: 1px solid grey;
+  top: 20px;
+  position: relative;
+margin-right: 20px;
 }
