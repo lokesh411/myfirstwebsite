@@ -206,10 +206,10 @@ position: relative;
 }
 .section-list-image img{
   border-radius: 5px;
+  filter: brightness(80%);
 }
 .image-content{
   font-family: Montserrat,sans-serif;
-  font-weight: 400;
   top: 80px;
 width: 100%;
 text-align: center;
@@ -218,14 +218,18 @@ position: absolute;
 }
 .image-content h4{
   font-family: Montserrat,sans-serif;
-  line-height: 1.5;
+  line-height: 1.25;
   font-size: 24px;
   margin-bottom: 0;
+  font-weight: 400;
 }
 .pimg{
-  font-family: Montserrat,sans-serif;
+  font-family: Lato,Helvetica,Arial,sans-serif;
   font-size: 16px;
-  margin-top: -30px;
+  margin-top: -35px;
+  display: block;
+  line-height: 1.5;
+  margin-bottom: 0;
 }
 .recent-prop{
     margin: 0px 20px 0px 20px;
