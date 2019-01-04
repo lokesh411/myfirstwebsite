@@ -24,19 +24,20 @@ button{
   text-align: center;
   letter-spacing: 0.06em;
 }
-.topright:hover{
+.topright a:hover{
   text-decoration: underline;
   text-decoration-color: #000000;
 }
 .top{
-  padding-bottom: 8px;
+  padding-bottom: 6px;
+  overflow: hidden;
 }
 .tophr{
-  background-color: #9b9b9b;
-  height: 0.5px;
+  background-color: #d9d9d9;
+  height: 1px;
   width: 1170px;
   margin-bottom: 0;
-  margin-top: 24px;
+  margin-top: 0;
   display: block;
   border: none;
 }
@@ -61,13 +62,14 @@ button{
   font-weight: 700;
   margin-left: 10px;
 }
-.top-bottom{
+.header-bottom{
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.06em;
   margin-top: 30px;
+  overflow:hidden;
 }
 .sticky {
   position: fixed;
@@ -77,8 +79,9 @@ button{
   z-index: 1;
   margin-top: 0px;
 }
-.top-bottom img{
+.header-bottom-img{
   padding-top: 9.2px;
+  float: left;
 }
 .head-list{
   float: right;
@@ -92,15 +95,13 @@ button{
   padding: 0;
   color: #000000;
 }
-.slider-list{
-  list-style-type: none;
-}
 .slider-list li{
   color: #9b9b9b;
   display: inline;
   padding: 0px 15px 0px 10px;
+  padding-left: 0px;
 }
-.topleft:hover{
+.topleft a:hover{
   color: #ffa500;
 }
 .head-list a:after{
@@ -114,7 +115,7 @@ button{
   width: 100%;
   transition: 0.3s width;
 }
-.topleft  {
+.topleft  a{
   color: #9b9b9b;
   float: left;
   margin-right: 39px;
@@ -125,7 +126,7 @@ button{
 a{
   text-decoration-line: none;
 }
-.topright {
+.topright a{
   color: #000000;
   float: right;
   margin-left: 101px;
@@ -239,22 +240,21 @@ h1{
   filter:brightness(70%);
 }
 .section-list-image:hover .image-content{
-  opacity:0;
+  top: 40px;
 }
-.section-list-image:hover .imgh-content{
-  transition: height 1s;
-  opacity: 1;
+.section-list-image:hover .image-content button{
+  visibility: visible;
 }
 .image-content{
-  opacity: 1;
   top: 75px;
   width: 100%;
   text-align: center;
   position: absolute;
   color: aliceblue;
   margin-left: -3px;
+  transition: 0.3s all;
 }
-.image-content h4, .imgh-content h4{
+.image-content h4{
   line-height: 1.25;
   font-size: 24px;
   margin-bottom: 0;
@@ -267,26 +267,18 @@ h1{
   line-height: 1.5;
   margin-bottom: 0;
 }
-.imgh-content{
-  opacity:0;
-  top: 40px;
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  color: aliceblue;
-  transition: 1s height ease;
-}
-.imgh-content button{
-  display: block;
+.image-content button{
+  visibility: hidden;
   width: 210px;
   height: 50px;
   font-weight: 900;
   font-size: 14px;
-  vertical-align: middle;
   padding: 10px 0;
   border: 1px solid #ffa500;
   border-radius: 5px;
   margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .recent-prop{
   margin: 0px 20px 0px 20px;
@@ -326,15 +318,19 @@ footer .flexdiv{
   display: block;
   width: 370px;
   margin: 0 auto;
-  margin-top: 42px;
-}
-.recent-prop-each:nth-of-type(4),.recent-prop-each:nth-of-type(5),.recent-prop-each:nth-of-type(6){
   margin-top: 50px;
+}
+.recent-prop-each:nth-of-type(1),.recent-prop-each:nth-of-type(2),.recent-prop-each:nth-of-type(3){
+  margin-top: 42px;
 }
 .recent-prop-each p{
   color: #434345;
   line-height: 1.5;
   margin-top: 19.5px;
+}
+.recent-prop-each img{
+  height:250px;
+  width: 370px;
 }
 .recent-prop-each ul{
   padding-top:2px;
@@ -342,21 +338,18 @@ footer .flexdiv{
   width: 100%;
   list-style-type: none;
 }
-.recent-prop-each li{
-  display: inline;
-  padding-left: 0px;
-}
-.recent-prop-each a{
+.recent-prop-each h5{
   margin-top: -6.5px;
   font-size: 22px;
+  margin-bottom: 0;
 }
 .section-list-image img{
   width: 330px;
   height: 210px;
 }
 .agents img{
-  height: 270;
-  width: 270;
+  height: 270px;
+  width: 270px;
 }
 .comm-btn{
   height: 50px;
@@ -366,19 +359,15 @@ footer .flexdiv{
   margin-left: auto;
   margin-right: auto;
 }
-.imgh-content button{
-  margin-left: auto;
-  margin-right: auto;
-}
-.main-btn3{
+.main-btn-prop{
   margin-top: 50px;
   width: 202px;
 }
-.main-btn1{
+.main-btn-agents{
   margin-top: 66px;
   width: 170px;
   }
-.main-btn2{
+.main-btn-send{
   margin-top: 25px;
   width: 149.15px;
 }
@@ -422,6 +411,10 @@ footer .flexdiv{
   width: 270px;
   margin: 0 auto;
 }
+.agents h5{
+  margin-top: 0;
+  margin-bottom: 0;
+}
 h3{
   text-align: left;
 }
@@ -432,7 +425,7 @@ h5 a{
   font-weight: 700;
   font-size: 22px;
   margin-top: 29px;
-  margin-bottom: 19px;
+  margin-bottom: 0px;
 }
 .sec-touch{
   padding-top: 78px;
@@ -450,7 +443,6 @@ h5 a{
   width:800px;
   margin: 0 auto;
 }
-
 textarea::placeholder, .form-input::placeholder{
   color: #ffffff;
 }
@@ -513,7 +505,11 @@ footer{
   padding:61px 15px 0px 15px;
 }
 .latest-news h6{
-  margin-top: 3.75px!important;
+  color: #ffffff;
+  letter-spacing: 0.06em;
+  font-size: 17px;
+  font-family: 'Montserrat',sans-serif;
+  margin-top: 3.75px;
 }
 .latest-news time{
   padding-left: 17px;
@@ -535,7 +531,7 @@ footer{
   float: left;
   display: block;
   position: relative;
-  margin-right: 0px;
+  margin-right: 8px;
   top:13px;
   border-radius: 50%;
   height: 4px;
@@ -543,9 +539,8 @@ footer{
   background-color: #ffa500;
   margin-left: 2px;
 }
-.useful-links li a{
-  padding-left:15px!important;
-  padding-bottom: 8px!important;
+.useful-links li{
+  padding-bottom: 8px;
   padding-top: 2px;
 }
 .f-real-estate ul{
@@ -559,7 +554,7 @@ footer{
   padding-left: 0px;
 }
 .useful-links-list{
-  padding-top:-5px;
+  padding-top:0px;
   padding-left: 0px;
   width: 100%;
   list-style-type: none;
@@ -575,35 +570,23 @@ footer{
   padding-top: 58px;
   width: 390px;
 }
-.testimonial:before{
+.testimonial:before, .testimonial2:before, .testimonial3:before{
   content: '';
   border-radius: 50%;
   float:left;
   width: 80px;
   height: 80px;
   display: block;
-  background-image: url("../images/small1.png");
   margin-right: 20px;
+}
+.testimonial:before{
+  background-image: url("../images/small1.png");
 }
 .testimonial2:before{
-  content: '';
-  border-radius: 50%;
-  float:left;
-  width: 80px;
-  height: 80px;
-  display: block;
   background-image: url("../images/small2.png");
-  margin-right: 20px;
 }
 .testimonial3:before{
-  content: '';
-  border-radius: 50%;
-  float:left;
-  width: 80px;
-  height: 80px;
-  display: block;
   background-image: url("../images/small3.png");
-  margin-right: 20px;
 }
 .sec-testimonials-nav{
   display: inline-block;
@@ -670,7 +653,6 @@ hr:not(.tophr){
 }
 h6{
   color: #434345;
-  font-size: medium;
   font-weight: 700;
   font-size: 17px;
   line-height: 1.47059;
@@ -701,7 +683,7 @@ h6{
   color: #ffffff;
   padding:65px 15px 0px 15px;
 }
-.f-real-estate h6, .newsletter h6, .useful-links h6, .latest-news h6{
+.f-real-estate h6, .newsletter h6, .useful-links h6{
   color: #ffffff;
   margin-top: 0px;
   letter-spacing: 0.06em;
@@ -719,27 +701,27 @@ h6{
   padding-left:15px;
   text-align: left;
   margin-top: -4px;
-  color: #434345!important;
+  color: #434345;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
 }
-.rounded-border2{
+.form-input.rounded-border, .rounded-border{
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+}
+.main-btn-prop.rounded-border, .main-btn-agents.rounded-border, .main-btn-send.rounded-border, .slider-btn.rounded-border{
   border-radius: 5px;
   border: 1px solid #ffa500;
 }
-.rounded-border{
-  border-radius: 5px;
-  border: 1px solid #000000;
-}
-.inner-slider-list li:nth-of-type(2):before, .inner-slider-list li:nth-of-type(3):before{
+.inner-slider-list li:nth-of-type(n+2):before{
   content: '';
   border-left: 1px solid grey;
   top: 20px;
   position: relative;
   margin-right: 20px;
 }
-.slider-list li:nth-of-type(2):before, .slider-list li:nth-of-type(3):before{
+.slider-list li:nth-of-type(n+2):before{
   content: '.';
   bottom: 3px;
   position: relative;
@@ -755,9 +737,13 @@ button:hover, button:active{
 .latest-news-heading{
   font-weight: 400;
   letter-spacing: 0.0em;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1.47059;
+  margin-top: 5px;
+  margin-bottom: 18px;
 }
 .form-input{
-  border: 1px solid #ffffff;
   width: 353px;
   height: 46px;
   background: transparent;

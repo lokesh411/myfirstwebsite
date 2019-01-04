@@ -9,23 +9,24 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:700,400,500,600" rel="stylesheet">
-    <script src="javascript/main.js"></script>
 </head>
 <body>
     <header>
         <div class="top">
           <div class="topleft">
-            <a class="topleft" href="#">LOG IN</a>
-            <a class="topleft" href="#">REGISTER</a>
+            <a href="#">LOG IN</a>
+            <a href="#">REGISTER</a>
           </div>
           <div class="topright">
-            <a class="topright" href="#">1-800-1234-567</a>
-            <a class="topright" href="mailto:abcd@gmail.com">info@demolink.org</a>
+            <a href="#">1-800-1234-567</a>
+            <a href="mailto:abcd@gmail.com">info@demolink.org</a>
           </div>
         </div>
         <hr class="tophr">
-        <div class="top-bottom">
+        <div class="header-bottom">
+          <div class="header-bottom-img">
             <img src="images/logo.png" height="36" width="217" alt="">
+          </div>
           <ul class="head-list">
             <li>
               <a href="#" id="active">HOME</a>
@@ -66,24 +67,20 @@
               </ul>
               </div>
               <div class="slider-input">
-                <input class="rounded-border" type="text" placeholder="Search by City or Address:">
-                <button class="slider-btn rounded-border2" onclick="function()">SEARCH</button>
+                <input class="rounded-border" type="text" placeholder="Search By City or Address:">
+                <button class="slider-btn rounded-border" onclick="function()">SEARCH</button>
               </div>
           </div>
-            <div class="slider-nav1">
-              <span id="sp1" onclick="changebackground(1)" class="slider-radio active"></span>
+            <div id="sample" class="slider-nav1">
+              <!-- <span id="sp1" onclick="changebackground(1)" class="slider-radio active"></span>
               <span id="sp2" onclick="changebackground(2)" class="slider-radio"></span>
-              <span id="sp3" onclick="changebackground(3)" class="slider-radio"></span>
+              <span id="sp3" onclick="changebackground(3)" class="slider-radio"></span> -->
             </div>
         </div>
         <section class="section-list">
           <div class="section-list-image">
             <img src="images/img1.jpg" >
             <div class="image-content">
-              <h4>With Swimming Pool</h4>
-              <p class="img-p">32 properties</p>
-            </div>
-            <div class="imgh-content">
               <h4>With Swimming Pool</h4>
               <p class="img-p">32 properties</p>
               <button>CHOOSE AN APARTMENT</button>
@@ -94,10 +91,6 @@
             <div class="image-content">
               <h4>Cozy Houses</h4>
               <p class="img-p">54 properties</p>
-            </div>
-            <div class="imgh-content">
-              <h4>Cozy Houses</h4>
-              <p class="img-p">54 properties</p>
               <button>CHOOSE AN APARTMENT</button>
             </div>
           </div>
@@ -106,20 +99,12 @@
             <div class="image-content">
               <h4>Studio Apartments</h4>
               <p class="img-p">32 properties</p>
-            </div>
-            <div class="imgh-content">
-              <h4>Studio Apartments</h4>
-              <p class="img-p">32 properties</p>
               <button>CHOOSE AN APARTMENT</button>
             </div>
           </div>
           <div class="section-list-image">
             <img src="images/img4.jpg" >
             <div class="image-content">
-              <h4>Luxury Houses</h4>
-              <p class="img-p">19 properties</p>
-            </div>
-            <div class="imgh-content">
               <h4>Luxury Houses</h4>
               <p class="img-p">19 properties</p>
               <button>CHOOSE AN APARTMENT</button>
@@ -132,7 +117,7 @@
           <div class="recent-prop-div">
             <div class="recent-prop-each">
               <img src="images/img5.jpg">
-              <a class="name">AVA Nob Hill</a>
+              <h5 class="name">AVA Nob Hill</h5>
               <h6>$1199.00/mon</h6>
               <ul class="slider-list">
                 <li>1200 sq ft</li>
@@ -143,7 +128,7 @@
             </div>
             <div class="recent-prop-each">
               <img src="images/img6.jpg">
-              <a class="name">Ashton San Francisco</a>
+              <h5 class="name">Ashton San Francisco</h5>
               <h6>$1595.00/mon</h6>
               <ul class="slider-list">
                 <li>1200 sq ft</li>
@@ -154,7 +139,7 @@
             </div>
             <div class="recent-prop-each">
               <img src="images/img7.jpg">
-              <a class="name">The Presidio Residencies</a>
+              <h5 class="name">The Presidio Residencies</h5>
               <h6>$2699.00/mon</h6>
               <ul class="slider-list">
                 <li>2200 sq ft</li>
@@ -165,7 +150,7 @@
             </div>
             <div class="recent-prop-each">
               <img src="images/img8.jpg">
-              <a class="name">Alchemy By Alta</a>
+              <h5 class="name">Alchemy By Alta</h5>
               <h6>$1199.00/mon</h6>
               <ul class="slider-list">
                 <li>1200 sq ft</li>
@@ -176,7 +161,7 @@
             </div>
             <div class="recent-prop-each">
               <img src="images/img9.jpg">
-              <a class="name">Avalon At Machine Bay</a>
+              <h5 class="name">Avalon At Machine Bay</h5>
               <h6>$1595.00/mon</h6>
               <ul class="slider-list">
                 <li>1200 sq ft</li>
@@ -187,7 +172,7 @@
             </div>
             <div class="recent-prop-each">
               <img src="images/img10.jpg">
-              <a class="name">Bayside Village Apartments</a>
+              <h5 class="name">Bayside Village Apartments</h5>
               <h6>$2699.00/mon</h6>
               <ul class="slider-list">
                 <li>1200 sq ft</li>
@@ -197,7 +182,7 @@
               <p>Pick your pleasure from a vantage point that puts all the best of the city's lively South Beach neighborhood within easy reach.</p>
             </div>
           </div>
-          <button class="main-btn3 comm-btn rounded-border2">VIEW ALL PROPERTIES</button>
+          <button class="main-btn-prop comm-btn rounded-border">VIEW ALL PROPERTIES</button>
         </section>
         <section class="sec-tools">
           <div class="sec-tools-div">
@@ -229,30 +214,30 @@
           <div class="recent-prop-div">
             <div class="agents">
               <img src="images/i1.jpg">
-              <a class="agents-name">Ashley Mason</a>
+              <h5 class="agents-name">Ashley Mason</h5>
               <a class="agents-details"href="tel:1234567890">1-800-7650-986</a>
               <a class="agents-details" href="mailto:abcd@gmail.com">ashley@demolink.org</a>
             </div>
             <div class="agents">
               <img src="images/i2.jpg">
-              <a class="agents-name">Russell Myers</a>
+              <h5 class="agents-name">Russell Myers</h5>
               <a class="agents-details" href="tel:1234567890">1-800-7650-986</a>
               <a class="agents-details" href="mailto:abcd@gmail.com">russell@demolink.org</a>
             </div>
             <div class="agents">
               <img src="images/i3.jpg">
-              <a class="agents-name">Shirley Vasques</a>
+              <h5 class="agents-name">Shirley Vasques</h5>
               <a class="agents-details" href="tel:1234567890">1-800-7650-986</a>
               <a class="agents-details" href="mailto:abcd@gmail.com">shirley@demolink.org</a>
             </div>
             <div class="agents">
               <img src="images/i4.jpg">
-              <a class="agents-name">Terry Sandoval</a>
+              <h5 class="agents-name">Terry Sandoval</h5>
               <a class="agents-details" href="tel:1234567890">1-800-7650-986</a>
               <a class="agents-details" href="mailto:abcd@gmail.com">terry@demolink.org</a>
             </div>
           </div>
-          <button class="main-btn1 comm-btn rounded-border2">VIEW ALL AGENTS</button>
+          <button class="main-btn-agents comm-btn rounded-border">VIEW ALL AGENTS</button>
         </section>
         <section class="sec-testimonials">
           <h2 class="h2">Testimonials</h2>
@@ -297,7 +282,7 @@
             </div>
           </div>
           <div class="button-center">
-            <button class="main-btn2 comm-btn rounded-border2">SEND MESSAGE</button>
+            <button class="main-btn-send comm-btn rounded-border">SEND MESSAGE</button>
           </div>
         </section>
     </main>
@@ -331,19 +316,19 @@
           <h6>USEFUL LINKS</h6>
           <ul class="useful-links-list">
             <li>
-              <a href="#">Properties</a>
+              Properties
             </li>
             <li>
-              <a href="#">Amenities</a>
+              Amenities
             </li>
             <li>
-              <a href="#">Rentals</a>
+              Rentals
             </li>
             <li>
-              <a href="#">Mortgages</a>
+              Mortgages
             </li>
             <li>
-              <a href="#">Agents</a>
+              Agents
             </li>
           </ul>
         </div>
@@ -351,18 +336,19 @@
           <h6>LATEST NEWS</h6>
           <article>
             <time>05/14/2018</time>
-            <h6 class="latest-news-heading">Top 10 Apartments in LA</h6>
+            <h5 class="latest-news-heading">Top 10 Apartments in LA</h5>
           </article>
           <article>
             <time>05/14/2018</time>
-            <h6 class="latest-news-heading">Choosing a Rental Property</h6>
+            <h5 class="latest-news-heading">Choosing a Rental Property</h5>
           </article>
           <article>
             <time>05/14/2018</time>
-            <h6 class="latest-news-heading">Features of Mortgage loans</h6>
+            <h5 class="latest-news-heading">Features of Mortgage loans</h5>
           </article>
         </div>
       </div>
     </footer>
+    <script src="javascript/main.js"></script>
 </body>
 </html>
