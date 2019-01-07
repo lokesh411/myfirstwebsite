@@ -36,8 +36,7 @@ button{
   background-color: #d9d9d9;
   height: 1px;
   width: 1170px;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0;
   display: block;
   border: none;
 }
@@ -101,6 +100,9 @@ button{
   padding: 0px 15px 0px 10px;
   padding-left: 0px;
 }
+.topleft{
+  float: left;
+}
 .topleft a:hover{
   color: #ffa500;
 }
@@ -109,15 +111,17 @@ button{
   content:'';
   height:2px;
   border-top: 2px solid #ffa500;
-  width:0;
+  width:100%;
+  transform: scaleX(0);
+  visibility: hidden;
 }
-.head-list a:hover:after, #active{
-  width: 100%;
-  transition: 0.3s width;
+.head-list a:hover:after,.head-list a:focus:after{
+  transform: scaleX(1);
+  transition: 0.3s all;
+  visibility: visible;
 }
 .topleft  a{
   color: #9b9b9b;
-  float: left;
   margin-right: 39px;
   margin-bottom: 6px;
   font-size: 15px;
@@ -126,9 +130,11 @@ button{
 a{
   text-decoration-line: none;
 }
+.topright{
+  float: right;
+}
 .topright a{
   color: #000000;
-  float: right;
   margin-left: 101px;
   margin-bottom: 6px;
 }
@@ -143,10 +149,15 @@ li a{
   display: block;
   padding: 2px 2px 5px 20px;
 }
+.slider-wrapper{
+  overflow-x: hidden;
+  width: 100%;
+}
 .slider{
   background-image: url(../images/image1.jpg);
   background-size: cover;
   height: 520px;
+  transition: 1s all;
 }
 .slider-nav{
   display: block;
@@ -183,10 +194,10 @@ h1{
 .slider-radio:hover{
   background-color: #ffffff;
 }
-.inner-slider-nav li a:not(.li-a){
+.inner-slider-nav li a:not(.list-a){
   color: #c4c4c4;
 }
-.inner-slider-nav li a:not(.li-a):hover{
+.inner-slider-nav li a:not(.list-a):hover{
   color: #ffffff;
 }
 .inner-slider-nav li{
@@ -243,6 +254,7 @@ h1{
   top: 40px;
 }
 .section-list-image:hover .image-content button{
+  transition-delay: 0.04s;
   visibility: visible;
 }
 .image-content{
@@ -593,11 +605,14 @@ footer{
   border-radius: 50%;
   width: 8px;
   height: 8px;
-  background-color: #ffa500;
+  background-color: #d9d9d9;
   text-align: center;
-  margin-left: 2px;
+  margin-left: 8px;
   margin-right: 1px;
   cursor:pointer;
+}
+.sec-testimonials-nav:hover{
+  background-color: #ffa500;
 }
 .testimonial p:nth-of-type(2), .testimonial2 p:nth-of-type(2), .testimonial3 p:nth-of-type(2){
   color: #434345;
@@ -636,7 +651,7 @@ hr:not(.tophr){
   background-color: #ffffff;
 }
 .active1{
-  background-color: #d9d9d9;
+  background-color: #ffa500;
 }
 .name{
   display: block;
@@ -763,4 +778,5 @@ textarea{
   height: 130px;
   font-size: 13px;
   color: #ffffff;
+  resize: none;
 }
