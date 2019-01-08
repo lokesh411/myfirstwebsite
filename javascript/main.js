@@ -1,73 +1,76 @@
 let bimages=["url(../myfirstwebsite/images/image1.jpg)","url(../myfirstwebsite/images/image2.jpg)","url(../myfirstwebsite/images/image3.jpg)"];
-let slidernav = document.querySelector('.slider-nav1');
-function changelabel(n){
-  let sample=document.getElementsByTagName("input");
-  if(n==1)
-  {
-    sample[0].setAttribute("placeholder","Search By City or Address:");
-  }
-  else if (n==2) {
-sample[0].setAttribute("placeholder","Search By Address or City:");
-    }
-    else{
-sample[0].setAttribute("placeholder","Search By City or Address:");
-    }
+let slidernav = document.querySelector('.slider-nav-bg');
+//-------placeholder-change-------------
+  let sale=document.querySelector('#sale');
+  let rent=document.querySelector('#rent');
+  let commercial=document.querySelector('#commercial');
+  sale.addEventListener("click",function(){
+    let input=document.getElementsByTagName("input");
+    removeColor();
+    input[0].setAttribute("placeholder","Search By City or Address:");
+    sale.classList.add("slider-list-active");
+  });
+  rent.addEventListener("click",function(){
+    let input=document.getElementsByTagName("input");
+    removeColor();
+    input[0].setAttribute("placeholder","Search By Address or City:");
+    rent.classList.add("slider-list-active");
+  });
+  commercial.addEventListener("click",function(){
+    let input=document.getElementsByTagName("input");
+    removeColor();
+    input[0].setAttribute("placeholder","Search By City or Address:");
+    commercial.classList.add("slider-list-active");
+  });
+  function removeColor(){
+    let slideractive=document.querySelector(".slider-list-active");
+    console.log("slider-active",slideractive);
+    slideractive.classList.remove("slider-list-active");
+    console.log("slider-active",slideractive);
   }
 //-----------slider-background-changer-----------------
 
 
 for (let i = 0; i < bimages.length; i++) {
   console.log("background");
-  let radio=document.createElement('span');
-  radio.classList.add("slider-radio");
+  let nav=document.createElement('span');
+  nav.classList.add("slider-radio");
   if(i===0) {
-    radio.classList.add("active");
+    nav.classList.add("active");
   }
-
-  radio.addEventListener("click",function(){          //  removeback(i);
+  nav.addEventListener("click",function(){          //  removeback(i);
     changeBackground(i);
-    spanBackground(i);
+    navBackgroundRemove();
+    nav.classList.add('active');
   });
-  slidernav.appendChild(radio);
+  slidernav.appendChild(nav);
 }
 function changeBackground(n){
   let slider=document.querySelector(".slider");
   slider.style.setProperty("background-image",bimages[n]);
 }
-function spanBackground(n){
-  let radio=document.querySelectorAll(".slider-radio");
-  for (let i = 0; i < radio.length; i++) {
-    if(i==n)
-    radio[i].classList.add("active");
-    else {
-      radio[i].classList.remove("active");
-        }
-  }
-}
+function navBackgroundRemove(){
+  let nav=document.querySelector(".active");
+  console.log("nav:",nav);
+  nav.classList.remove("active");
+    }
 //-----Testimonials----slider--------------
 let slidernav1=document.querySelector('.slider-nav');
 for (let i = 0; i < 2; i++) {
   let span=document.createElement('span');
-  span.classList.add("sec-testimonials-nav");
+  span.classList.add("testimonials-nav");
   if(i==0)
   {
-    span.classList.add("active1");
+    span.classList.add("active-orange");
   }
   span.addEventListener("click",function(){
-    navBackground(i);
+    navBackground();
+    span.classList.add("active-orange");
   });
   slidernav1.appendChild(span);
 }
 function navBackground(n){
   console.log("n:",n);
-  let nav=document.querySelectorAll(".sec-testimonials-nav");
-  for (var i = 0; i<nav.length; i++)
-  {
-    if(i==n){
-      nav[i].classList.add("active1");
-    }
-    else {
-      nav[i].classList.remove("active1");
-    }
-  }
+  let nav=document.querySelector(".active-orange");
+  nav.classList.remove("active-orange");
 }

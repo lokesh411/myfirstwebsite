@@ -12,14 +12,14 @@
 </head>
 <body>
     <header>
-        <div class="top">
+        <div class="head-top">
           <div class="topleft">
             <a href="#">LOG IN</a>
             <a href="#">REGISTER</a>
           </div>
           <div class="topright">
-            <a href="#">1-800-1234-567</a>
-            <a href="mailto:abcd@gmail.com">info@demolink.org</a>
+            <a class="icon-openmail" href="mailto:abcd@gmail.com">info@demolink.org</a>
+            <a class="icon-phone" href="#">1-800-1234-567</a>
           </div>
         </div>
         <hr class="tophr">
@@ -50,31 +50,28 @@
         </div>
     </header>
     <main>
-        <div id="sliderid" class="slider">
+        <div class="slider">
           <div class="inner-slider">
               <h1>Professional realtor works for you</h1>
               <div class="inner-slider-nav">
               <ul class="inner-slider-list">
                 <li >
-                  <a class="list-a click"  onclick="changelabel(1)">SALE</a>
+                  <a id="sale" class="list-a slider-list-active click">SALE</a>
                 </li>
                 <li >
-                  <a class="click" onclick="changelabel(2)" >RENT</a>
+                  <a id="rent" class="click">RENT</a>
                 </li>
                 <li >
-                  <a class="click" onclick="changelabel(3)" >COMMERCIAL</a>
+                  <a id="commercial" class="click">COMMERCIAL</a>
                 </li>
               </ul>
               </div>
               <div class="slider-input">
                 <input class="rounded-border" type="text" placeholder="Search By City or Address:">
-                <button class="slider-btn rounded-border" onclick="function()">SEARCH</button>
+                <button class="slider-btn rounded-border">SEARCH</button>
               </div>
           </div>
-            <div id="sample" class="slider-nav1">
-              <!-- <span id="sp1" onclick="changebackground(1)" class="slider-radio active"></span>
-              <span id="sp2" onclick="changebackground(2)" class="slider-radio"></span>
-              <span id="sp3" onclick="changebackground(3)" class="slider-radio"></span> -->
+            <div class="slider-nav-bg">
             </div>
         </div>
         <section class="section-list">
@@ -95,7 +92,7 @@
             </div>
           </div>
           <div class="section-list-image">
-            <img width="330px" height="210px" src="images/img3.jpg" >
+            <img src="images/img3.jpg" >
             <div class="image-content">
               <h4>Studio Apartments</h4>
               <p class="img-p">32 properties</p>
@@ -112,10 +109,10 @@
           </div>
         </section>
         <section class="recent-prop">
-          <h2 class="h2">Recent Properties</h2>
+          <h2 class="initial-title">Recent Properties</h2>
           <hr>
-          <div class="recent-prop-div">
-            <div class="recent-prop-each">
+          <div class="recent-prop-pre">
+            <div class="property">
               <img src="images/img5.jpg">
               <h5 class="name">AVA Nob Hill</h5>
               <h6>$1199.00/mon</h6>
@@ -126,7 +123,7 @@
               </ul>
               <p>AVA Nob Hill includes studios and 1 and 2 bedroom apartments that feature an urban-inspired design that extends beyond your walls and throughout the entire community.</p>
             </div>
-            <div class="recent-prop-each">
+            <div class="property">
               <img src="images/img6.jpg">
               <h5 class="name">Ashton San Francisco</h5>
               <h6>$1595.00/mon</h6>
@@ -137,7 +134,7 @@
               </ul>
               <p>Ashton San Francisco offers luxury apartments, eco-friendly features, and remarkable on-site resident amenities. Enjoy premier services and access to our state-of-the-art fitness center, clubhouse, business center, and outdoor fire pit lounge.</p>
             </div>
-            <div class="recent-prop-each">
+            <div class="property">
               <img src="images/img7.jpg">
               <h5 class="name">The Presidio Residencies</h5>
               <h6>$2699.00/mon</h6>
@@ -148,7 +145,7 @@
               </ul>
               <p>The Presidio Residences offer a unique opportunity to live in a national park setting and enjoy quiet neighborhoods, convenient location, beautiful open spaces, and outstanding recreational amenities.</p>
             </div>
-            <div class="recent-prop-each">
+            <div class="property">
               <img src="images/img8.jpg">
               <h5 class="name">Alchemy By Alta</h5>
               <h6>$1199.00/mon</h6>
@@ -159,7 +156,7 @@
               </ul>
               <p>One month FREE on select apartment homes for a limited time.</p>
             </div>
-            <div class="recent-prop-each">
+            <div class="property">
               <img src="images/img9.jpg">
               <h5 class="name">Avalon At Machine Bay</h5>
               <h6>$1595.00/mon</h6>
@@ -170,7 +167,7 @@
               </ul>
               <p>Avalon at Mission Bay located in San Francisco near the San Francisco Caltrain Station offers thoughtfully designed studio, 1, 2 and 3 bedroom apartments and town homes.</p>
             </div>
-            <div class="recent-prop-each">
+            <div class="property">
               <img src="images/img10.jpg">
               <h5 class="name">Bayside Village Apartments</h5>
               <h6>$2699.00/mon</h6>
@@ -184,78 +181,78 @@
           </div>
           <button class="main-btn-prop comm-btn rounded-border">VIEW ALL PROPERTIES</button>
         </section>
-        <section class="sec-tools">
-          <div class="sec-tools-div">
-            <h2 class="h2 h2-white">Real Estate Tools and Resources</h2>
+        <section class="realestate-tools">
+          <div class="realestate-tools-div">
+            <h2 class="initial-title h2-white">Real Estate Tools and Resources</h2>
             <hr>
             <div class="flexdiv flex">
               <div class="real-tools">
-                <span class="icons"></span>
+                <span class="icons-chat"></span>
                 <h5 class="h5">MORE LISTINGS</h5>
                 <p>Check up to 40% more houses for sale. See pictures of your new life at a new place. See maps, markets, etc.</p>
               </div>
               <div class="real-tools">
-                <span class="icons">
+                <span class="icons-star">
                 </span>
                 <h5 class="h5">TOP-RATED AGENTS</h5>
                 <p>All our real estate agents are professionals in your neighborhood, which are ready to help you find your new home.</p>
               </div>
               <div class="real-tools">
-                <span class="icons"></span>
+                <span class="icons-office"></span>
                 <h5 class="h5">HOME ESTIMATES</h5>
                 <p>Wanna know how much your new home will cost? See estimates for any neighborhood and check prices for similar homes.</p>
               </div>
             </div>
           </div>
         </section>
-        <section class="sec-agents">
-          <h2 class="h2">Real Estate Agents</h2>
+        <section class="real-agents">
+          <h2 class="initial-title">Real Estate Agents</h2>
           <hr>
-          <div class="recent-prop-div">
+          <div class="recent-prop-pre">
             <div class="agents">
               <img src="images/i1.jpg">
               <h5 class="agents-name">Ashley Mason</h5>
-              <a class="agents-details"href="tel:1234567890">1-800-7650-986</a>
-              <a class="agents-details" href="mailto:abcd@gmail.com">ashley@demolink.org</a>
+              <a class="icon-phone-black agents-details"href="tel:1234567890">1-800-7650-986</a>
+              <a class="icon-openmail-black agents-details" href="mailto:abcd@gmail.com">ashley@demolink.org</a>
             </div>
             <div class="agents">
               <img src="images/i2.jpg">
               <h5 class="agents-name">Russell Myers</h5>
-              <a class="agents-details" href="tel:1234567890">1-800-7650-986</a>
-              <a class="agents-details" href="mailto:abcd@gmail.com">russell@demolink.org</a>
+              <a class="icon-phone-black agents-details" href="tel:1234567890">1-800-7650-986</a>
+              <a class="icon-openmail-black agents-details" href="mailto:abcd@gmail.com">russell@demolink.org</a>
             </div>
             <div class="agents">
               <img src="images/i3.jpg">
               <h5 class="agents-name">Shirley Vasques</h5>
-              <a class="agents-details" href="tel:1234567890">1-800-7650-986</a>
-              <a class="agents-details" href="mailto:abcd@gmail.com">shirley@demolink.org</a>
+              <a class="icon-phone-black agents-details" href="tel:1234567890">1-800-7650-986</a>
+              <a class="icon-openmail-black agents-details" href="mailto:abcd@gmail.com">shirley@demolink.org</a>
             </div>
             <div class="agents">
               <img src="images/i4.jpg">
               <h5 class="agents-name">Terry Sandoval</h5>
-              <a class="agents-details" href="tel:1234567890">1-800-7650-986</a>
-              <a class="agents-details" href="mailto:abcd@gmail.com">terry@demolink.org</a>
+              <a class="icon-phone-black agents-details" href="tel:1234567890">1-800-7650-986</a>
+              <a class="icon-openmail-black agents-details" href="mailto:abcd@gmail.com">terry@demolink.org</a>
             </div>
           </div>
           <button class="main-btn-agents comm-btn rounded-border">VIEW ALL AGENTS</button>
         </section>
-        <section class="sec-testimonials">
-          <h2 class="h2">Testimonials</h2>
+        <section class="testimonials-whole">
+          <h2 class="initial-title">Testimonials</h2>
           <hr>
-          <div class="recent-prop-div1">
-              <div class="sec-testimonials-each">
+          <div class="testimonial-pre">
+              <div class="testi">
                   <div class="testimonial">
                       <p>Thank you for your prompt response and the help that you gave me. You always have a quick solution to any problem. What an excellent level of customer service!</p>
                       <p>— Lisa Evans</p>
                   </div>
               </div>
-              <div class="sec-testimonials-each">
+              <div class="testi">
                   <div class="testimonial2">
                     <p>I just want to thank you for your help. I was so pleased and grateful. Keep up the excellent work. Your site provides the best support I have ever encountered.</p>
                     <p>— Nicholas Lane</p>
                   </div>
               </div>
-              <div class="sec-testimonials-each">
+              <div class="testi">
                   <div class="testimonial3">
                     <p>Thank you very much for your rapid response. It's no doubt that your company is worth admiring! I have experienced the fastest support ever. Thank you a thousand times.</p>
                     <p>— Ethan Dean</p>
@@ -263,16 +260,14 @@
               </div>
           </div>
           <div class="slider-nav">
-          <!--  <span class="sec-testimonials-nav active1"></span>
-            <span class="sec-testimonials-nav"></span> -->
           </div>
         </section>
-        <section class="sec-touch">
-          <div class="sec-touch-div">
-            <h2 class="h2 h2-white">Get In Touch</h2>
+        <section class="get-touch">
+          <div class="get-touch-pre">
+            <h2 class="initial-title h2-white">Get In Touch</h2>
             <hr>
             <div class="form">
-              <form action="" id="form1">
+              <form action="">
                 <input class="form-input rounded-border" type="text" placeholder="First name:">
                 <input class="form-input rounded-border" type="text" placeholder="Last name:">
                 <input class="form-input rounded-border" type="text" placeholder="Phone:">
@@ -287,28 +282,31 @@
         </section>
     </main>
     <footer>
-      <div class="flexdiv">
+      <div class="flexdiv-footer">
         <div class="f-real-estate">
           <img src="images/logo2.png" width="170" height="30" alt="">
           <p>Real Estate</p>
           <ul class="footerul">
             <li>
-              <span class="footericon"></span>
+              <span class="icons-facebook footericon"></span>
             </li>
             <li>
-              <span class="footericon"></span>
+              <span class="icons-twitter footericon"></span>
             </li>
             <li>
-              <span class="footericon"></span>
+              <span class="icons-linkedin footericon"></span>
             </li>
             <li>
-              <span class="footericon"></span>
+              <span class="icons-gplus footericon"></span>
             </li>
           </ul>
         </div>
         <div class="newsletter">
           <h6>NEWSLETTER</h6>
           <p>Keep up with the latest company news and events. Enter your e-mail and subscribe to our newsletter. </p>
+          <span class="icon-mail-pre">
+            <span class="icon-mail"></span>
+          </span>
           <input class="footerinp" type="text" placeholder="Type Your E-mail:">
           <button class="footerbtn">SUBSCRIBE</button>
         </div>
