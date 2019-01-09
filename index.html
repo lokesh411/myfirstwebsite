@@ -29,7 +29,7 @@
           </div>
           <ul class="head-list">
             <li>
-              <a href="#">HOME</a>
+              <a id="first" href="#">HOME</a>
             </li>
             <li>
               <a href="#">CATALOG</a>
@@ -56,13 +56,13 @@
               <div class="inner-slider-nav">
               <ul class="inner-slider-list">
                 <li >
-                  <a id="sale" class="list-a slider-list-active click">SALE</a>
+                  <a id="sale" class="list-a slider-list-active cursor-pointer">SALE</a>
                 </li>
                 <li >
-                  <a id="rent" class="click">RENT</a>
+                  <a id="rent" class="cursor-pointer">RENT</a>
                 </li>
                 <li >
-                  <a id="commercial" class="click">COMMERCIAL</a>
+                  <a id="commercial" class="cursor-pointer">COMMERCIAL</a>
                 </li>
               </ul>
               </div>
@@ -74,8 +74,8 @@
             <div class="slider-nav-bg">
             </div>
         </div>
-        <section class="section-list">
-          <div class="section-list-image">
+        <section class="prop-list">
+          <div class="prop-category">
             <img src="images/img1.jpg" >
             <div class="image-content">
               <h4>With Swimming Pool</h4>
@@ -83,7 +83,7 @@
               <button>CHOOSE AN APARTMENT</button>
             </div>
           </div>
-          <div class="section-list-image">
+          <div class="prop-category">
             <img src="images/img2.jpg" >
             <div class="image-content">
               <h4>Cozy Houses</h4>
@@ -91,7 +91,7 @@
               <button>CHOOSE AN APARTMENT</button>
             </div>
           </div>
-          <div class="section-list-image">
+          <div class="prop-category">
             <img src="images/img3.jpg" >
             <div class="image-content">
               <h4>Studio Apartments</h4>
@@ -99,7 +99,7 @@
               <button>CHOOSE AN APARTMENT</button>
             </div>
           </div>
-          <div class="section-list-image">
+          <div class="prop-category">
             <img src="images/img4.jpg" >
             <div class="image-content">
               <h4>Luxury Houses</h4>
@@ -114,7 +114,7 @@
           <div class="recent-prop-pre">
             <div class="property">
               <img src="images/img5.jpg">
-              <h5 class="name">AVA Nob Hill</h5>
+              <h5 class="prop-name">AVA Nob Hill</h5>
               <h6>$1199.00/mon</h6>
               <ul class="slider-list">
                 <li>1200 sq ft</li>
@@ -125,7 +125,7 @@
             </div>
             <div class="property">
               <img src="images/img6.jpg">
-              <h5 class="name">Ashton San Francisco</h5>
+              <h5 class="prop-name">Ashton San Francisco</h5>
               <h6>$1595.00/mon</h6>
               <ul class="slider-list">
                 <li>1200 sq ft</li>
@@ -136,7 +136,7 @@
             </div>
             <div class="property">
               <img src="images/img7.jpg">
-              <h5 class="name">The Presidio Residencies</h5>
+              <h5 class="prop-name">The Presidio Residencies</h5>
               <h6>$2699.00/mon</h6>
               <ul class="slider-list">
                 <li>2200 sq ft</li>
@@ -147,7 +147,7 @@
             </div>
             <div class="property">
               <img src="images/img8.jpg">
-              <h5 class="name">Alchemy By Alta</h5>
+              <h5 class="prop-name">Alchemy By Alta</h5>
               <h6>$1199.00/mon</h6>
               <ul class="slider-list">
                 <li>1200 sq ft</li>
@@ -158,7 +158,7 @@
             </div>
             <div class="property">
               <img src="images/img9.jpg">
-              <h5 class="name">Avalon At Machine Bay</h5>
+              <h5 class="prop-name">Avalon At Machine Bay</h5>
               <h6>$1595.00/mon</h6>
               <ul class="slider-list">
                 <li>1200 sq ft</li>
@@ -169,7 +169,7 @@
             </div>
             <div class="property">
               <img src="images/img10.jpg">
-              <h5 class="name">Bayside Village Apartments</h5>
+              <h5 class="prop-name">Bayside Village Apartments</h5>
               <h6>$2699.00/mon</h6>
               <ul class="slider-list">
                 <li>1200 sq ft</li>
@@ -182,7 +182,7 @@
           <button class="main-btn-prop comm-btn rounded-border">VIEW ALL PROPERTIES</button>
         </section>
         <section class="realestate-tools">
-          <div class="realestate-tools-div">
+          <div class="realestate-tools-pre">
             <h2 class="initial-title h2-white">Real Estate Tools and Resources</h2>
             <hr>
             <div class="flexdiv flex">
@@ -240,22 +240,22 @@
           <h2 class="initial-title">Testimonials</h2>
           <hr>
           <div class="testimonial-pre">
-              <div class="testi">
+              <div class="review">
                   <div class="testimonial">
                       <p>Thank you for your prompt response and the help that you gave me. You always have a quick solution to any problem. What an excellent level of customer service!</p>
-                      <p>— Lisa Evans</p>
+                      <p id="reviewer">— Lisa Evans</p>
                   </div>
               </div>
-              <div class="testi">
+              <div class="review">
                   <div class="testimonial2">
                     <p>I just want to thank you for your help. I was so pleased and grateful. Keep up the excellent work. Your site provides the best support I have ever encountered.</p>
-                    <p>— Nicholas Lane</p>
+                    <p id="reviewer">— Nicholas Lane</p>
                   </div>
               </div>
-              <div class="testi">
+              <div class="review">
                   <div class="testimonial3">
                     <p>Thank you very much for your rapid response. It's no doubt that your company is worth admiring! I have experienced the fastest support ever. Thank you a thousand times.</p>
-                    <p>— Ethan Dean</p>
+                    <p id="reviewer">— Ethan Dean</p>
                   </div>
               </div>
           </div>
@@ -294,10 +294,10 @@
               <span class="icons-twitter footericon"></span>
             </li>
             <li>
-              <span class="icons-linkedin footericon"></span>
+              <span class="icons-gplus footericon"></span>
             </li>
             <li>
-              <span class="icons-gplus footericon"></span>
+              <span class="icons-linkedin footericon"></span>
             </li>
           </ul>
         </div>
@@ -307,8 +307,8 @@
           <span class="icon-mail-pre">
             <span class="icon-mail"></span>
           </span>
-          <input class="footerinp" type="text" placeholder="Type Your E-mail:">
-          <button class="footerbtn">SUBSCRIBE</button>
+          <input class="newsletter-input" type="text" placeholder="Type Your E-mail:">
+          <button class="newsletter-btn">SUBSCRIBE</button>
         </div>
         <div class="useful-links">
           <h6>USEFUL LINKS</h6>
@@ -333,14 +333,17 @@
         <div class="latest-news">
           <h6>LATEST NEWS</h6>
           <article>
+            <span class="arrow-right"></span>
             <time>05/14/2018</time>
             <h5 class="latest-news-heading">Top 10 Apartments in LA</h5>
           </article>
           <article>
+            <span class="arrow-right"></span>
             <time>05/14/2018</time>
             <h5 class="latest-news-heading">Choosing a Rental Property</h5>
           </article>
           <article>
+            <span class="arrow-right"></span>
             <time>05/14/2018</time>
             <h5 class="latest-news-heading">Features of Mortgage loans</h5>
           </article>
