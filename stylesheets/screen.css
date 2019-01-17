@@ -1,0 +1,846 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?cm61o5");
+  src: url("../fonts/icomoon.eot?cm61o5#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?cm61o5") format("truetype"), url("../fonts/icomoon.woff?cm61o5") format("woff"), url("../fonts/icomoon.svg?cm61o5#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*---Media Queries --*/
+@media (min-width: 1200px) {
+  /* line 20, ../sass/screen.scss */
+  .container {
+    max-width: 1200px;
+  }
+
+  /* line 23, ../sass/screen.scss */
+  textarea {
+    min-width: 770px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 28, ../sass/screen.scss */
+  textarea {
+    width: 500px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 33, ../sass/screen.scss */
+  textarea {
+    width: 350px;
+  }
+}
+@media (min-width: 576px) {
+  /* line 38, ../sass/screen.scss */
+  textarea {
+    width: 350px;
+  }
+}
+/*--- Bootstrap Padding Fix --*/
+/* line 43, ../sass/screen.scss */
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/* line 46, ../sass/screen.scss */
+button {
+  background-color: #ffa500;
+  color: white;
+}
+
+/* line 50, ../sass/screen.scss */
+html {
+  overflow-x: hidden;
+}
+
+/* line 53, ../sass/screen.scss */
+body {
+  position: relative;
+  font-family: "lato", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  width: 100%;
+}
+
+/* line 60, ../sass/screen.scss */
+a {
+  color: #000000;
+}
+
+/* line 63, ../sass/screen.scss */
+.navbar-inner {
+  padding: 14px 0 33px;
+}
+
+/* line 66, ../sass/screen.scss */
+.topleft {
+  float: left;
+}
+/* line 68, ../sass/screen.scss */
+.topleft a {
+  margin-right: 15px;
+}
+
+/* line 72, ../sass/screen.scss */
+.navbar {
+  padding: 0;
+}
+
+/* line 75, ../sass/screen.scss */
+.navbar-inner-top {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #d9d9d9;
+  overflow: auto;
+  width: 100%;
+}
+
+/* line 83, ../sass/screen.scss */
+.topright {
+  float: right;
+}
+/* line 85, ../sass/screen.scss */
+.topright a {
+  margin-left: 25px;
+}
+
+/* line 89, ../sass/screen.scss */
+.slider.carousel-indicators {
+  bottom: 40px;
+}
+
+/* line 92, ../sass/screen.scss */
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  margin-right: 15px;
+  transition: 0.3s all;
+  background: transparent;
+  border: 2px solid #ffffff;
+}
+
+/* line 101, ../sass/screen.scss */
+.carousel-indicators li:hover:not(.testi li) {
+  transform: scale(1.4);
+}
+
+/* line 104, ../sass/screen.scss */
+.nav-item {
+  color: #000000 !important;
+}
+/* line 106, ../sass/screen.scss */
+.nav-item a:after, .nav-item #first:after {
+  display: block;
+  content: '';
+  border-top: 2px solid #ffa500;
+  margin-top: 1px;
+  transform: scaleX(0);
+  transition: 0.3s all;
+}
+
+/* line 115, ../sass/screen.scss */
+#first:after {
+  transform: scaleX(1) !important;
+}
+
+/* line 118, ../sass/screen.scss */
+.nav-link:hover:after {
+  transform: scaleX(1);
+}
+
+/* line 121, ../sass/screen.scss */
+a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* line 125, ../sass/screen.scss */
+.slider-nav, .recent-prop-list, .footerul {
+  list-style-type: none;
+  text-align: left;
+}
+/* line 128, ../sass/screen.scss */
+.slider-nav li, .recent-prop-list li, .footerul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* line 133, ../sass/screen.scss */
+.footerul {
+  margin-top: 20px;
+}
+
+/* line 136, ../sass/screen.scss */
+.slider-nav li:nth-of-type(n+2):before {
+  content: '';
+  border-left: 1px solid #9b9b9b;
+  position: relative;
+  margin-right: 20px;
+}
+
+/* line 142, ../sass/screen.scss */
+.carousel-caption {
+  justify-content: center;
+  bottom: 230px;
+}
+
+/* line 146, ../sass/screen.scss */
+.slider-input {
+  height: 50px;
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+  border: none;
+  padding-left: 15px;
+}
+
+/* line 154, ../sass/screen.scss */
+.slider-button, .comm-btn {
+  color: #ffffff;
+  background-color: #ffa500;
+}
+
+/* line 158, ../sass/screen.scss */
+.slider-button {
+  max-width: 120px;
+  width: 30%;
+  height: 50px;
+  margin-top: 10px;
+}
+
+/* line 164, ../sass/screen.scss */
+h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+/* line 168, ../sass/screen.scss */
+.col-sm-10.col-lg-7.col-xl-6 {
+  margin-top: 40px;
+}
+
+/* line 171, ../sass/screen.scss */
+.prop-list {
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+/* line 174, ../sass/screen.scss */
+.prop-list img {
+  position: relative;
+  height: 210px;
+  filter: brightness(70%);
+}
+
+/* line 180, ../sass/screen.scss */
+.prop-list-caption {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  transition: 0.3s all;
+}
+/* line 188, ../sass/screen.scss */
+.prop-list-caption h4 {
+  line-height: 1.25;
+  font-size: 24px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+/* line 194, ../sass/screen.scss */
+.prop-list-caption button {
+  visibility: hidden;
+  width: 210px;
+  height: 50px;
+  font-weight: 900;
+  font-size: 14px;
+  padding: 10px 0;
+  border: 1px solid #ffa500;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 209, ../sass/screen.scss */
+.prop:hover .prop-list-caption {
+  top: 80px;
+}
+/* line 211, ../sass/screen.scss */
+.prop:hover .prop-list-caption button {
+  visibility: visible;
+  transition-delay: 0.04s;
+}
+
+/* line 217, ../sass/screen.scss */
+.justify-content {
+  justify-content: center;
+}
+
+/* line 220, ../sass/screen.scss */
+.recent-prop {
+  padding: 66px 0 110px;
+}
+/* line 222, ../sass/screen.scss */
+.recent-prop img {
+  height: 250px;
+  width: 370px;
+}
+
+/* line 227, ../sass/screen.scss */
+.initial-title, .initial-title-white {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.184;
+  margin-bottom: 17px;
+  color: #434345;
+  text-align: center;
+}
+
+/* line 235, ../sass/screen.scss */
+.initial-title-white {
+  color: #ffffff;
+}
+
+/* line 239, ../sass/screen.scss */
+hr:not(.tophr) {
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, #ffa200 0%, #ff7e00 100%);
+  border: none;
+  margin-top: 27px;
+}
+
+/* line 246, ../sass/screen.scss */
+.recent-prop-list li:nth-of-type(n+2):before {
+  content: '.';
+  position: relative;
+  margin-right: 15px;
+  bottom: 5px;
+}
+
+/* line 252, ../sass/screen.scss */
+.prop-name {
+  display: block;
+  font-weight: 700;
+  color: #ffa500;
+  padding-top: 25px;
+}
+
+/* line 258, ../sass/screen.scss */
+.realestate-tools {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* line 264, ../sass/screen.scss */
+.icons-chat, .icons-star, .icons-office {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff7e00 0%, #f5bf2f 100%);
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 272, ../sass/screen.scss */
+.icon-openmail:before, .icon-phone:before, .icons-star:before, .icons-chat:before, .icons-office:before,
+.icons-facebook:before, .icons-twitter:before, .icons-linkedin:before, .icons-gplus:before, .icon-mail:before,
+.arrow-right:before, .icon-openmail-black:before, .icon-phone-black:before {
+  font-family: 'icomoon';
+  margin-right: 10px;
+}
+
+/* line 278, ../sass/screen.scss */
+.icon-openmail:before {
+  content: '\f2b7';
+  color: #9b9b9b;
+  margin-right: 13px;
+  font-size: 15px;
+}
+
+/* line 284, ../sass/screen.scss */
+.icon-phone:before {
+  content: '\e901';
+  color: #9b9b9b;
+  margin-right: 13px;
+  font-size: 14px;
+}
+
+/* line 290, ../sass/screen.scss */
+.icon-openmail-black:before {
+  content: '\f2b7';
+  color: #434345;
+  font-size: 15px;
+}
+
+/* line 295, ../sass/screen.scss */
+.icon-phone-black:before {
+  content: '\e901';
+  color: #434345;
+  font-size: 12px;
+}
+
+/* line 300, ../sass/screen.scss */
+.icons-facebook:before,
+.icons-twitter:before,
+.icons-linkedin:before,
+.icons-gplus:before,
+.icon-mail:before {
+  position: relative;
+  vertical-align: middle;
+  top: 5px;
+}
+
+/* line 309, ../sass/screen.scss */
+.icons-chat:before,
+.icons-star:before,
+.icons-office:before {
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+}
+
+/* line 316, ../sass/screen.scss */
+.icons-chat:before {
+  font-size: 30px;
+  content: '\e900';
+}
+
+/* line 320, ../sass/screen.scss */
+.icons-star:before {
+  font-size: 30px;
+  content: '\f005';
+}
+
+/* line 324, ../sass/screen.scss */
+.icons-office:before {
+  font-size: 30px;
+  content: '\e903';
+  padding-top: 20px;
+}
+
+/* line 329, ../sass/screen.scss */
+.icons-facebook:before {
+  padding-top: 10px;
+  margin-left: 9px;
+  content: '\ea90';
+  color: #ffffff;
+}
+
+/* line 335, ../sass/screen.scss */
+.icons-twitter:before {
+  padding-top: 10px;
+  margin-left: 10px;
+  content: '\f099';
+  color: #ffffff;
+}
+
+/* line 341, ../sass/screen.scss */
+.icons-linkedin:before {
+  padding-top: 8px;
+  margin-left: 10px;
+  content: '\eaca';
+  color: #ffffff;
+}
+
+/* line 347, ../sass/screen.scss */
+.icons-gplus:before {
+  padding-top: 9px;
+  margin-left: 11px;
+  content: '\ea8b';
+  color: #ffffff;
+}
+
+/* line 353, ../sass/screen.scss */
+.icon-mail:before {
+  content: '\f0e0';
+  padding-top: 10px;
+  padding-left: 9px;
+}
+
+/* line 358, ../sass/screen.scss */
+.icon-mail-pre {
+  background-color: #212121;
+  height: 40px;
+  margin-top: 30px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+/* line 365, ../sass/screen.scss */
+.arrow-right:before {
+  content: '\ea3c';
+  margin-right: 5px;
+  color: #ffa500;
+  font-size: 11px;
+}
+
+/* line 371, ../sass/screen.scss */
+.realestate-agents, .testimonials, .getintouch, .realestate-tools {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+/* line 375, ../sass/screen.scss */
+.agents-name {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffa500;
+  padding-top: 15px;
+}
+
+/* line 382, ../sass/screen.scss */
+.agents-details {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  padding: 4px 0px 3px;
+}
+
+/* line 389, ../sass/screen.scss */
+.main-btn-prop {
+  margin-top: 50px;
+  width: 202px;
+}
+
+/* line 393, ../sass/screen.scss */
+.comm-btn {
+  height: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 401, ../sass/screen.scss */
+.testimonials {
+  background-color: #f5f5f5;
+}
+
+/* line 404, ../sass/screen.scss */
+.testimonials p {
+  text-align: left;
+  color: #000000;
+}
+
+/* line 408, ../sass/screen.scss */
+#reviewer {
+  color: #434345;
+  display: block;
+  position: absolute;
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 16px;
+  left: 100px;
+  margin-top: 4px;
+  font-style: normal;
+}
+
+/* line 419, ../sass/screen.scss */
+.italic {
+  font-style: italic;
+}
+
+/* line 422, ../sass/screen.scss */
+.testimonial:before, .testimonial2:before, .testimonial3:before {
+  content: '';
+  border-radius: 50%;
+  float: left;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin-right: 20px;
+}
+
+/* line 431, ../sass/screen.scss */
+.testimonial:before {
+  background-image: url("../images/small1.png");
+}
+
+/* line 434, ../sass/screen.scss */
+.testimonial2:before {
+  background-image: url("../images/small2.png");
+}
+
+/* line 437, ../sass/screen.scss */
+.testimonial3:before {
+  background-image: url("../images/small3.png");
+}
+
+/* line 440, ../sass/screen.scss */
+.carousel-caption.testi {
+  position: static;
+}
+
+/* line 443, ../sass/screen.scss */
+.testimonials .carousel-indicators {
+  bottom: -60px;
+}
+
+/* line 446, ../sass/screen.scss */
+.carousel-indicators.testi li:not(.active) {
+  background-color: #d9d9d9;
+  border: none;
+}
+
+/* line 450, ../sass/screen.scss */
+.active-orange {
+  background-color: #ffa500 !important;
+}
+
+/* line 453, ../sass/screen.scss */
+.getintouch {
+  background-image: url("../images/bg2.jpg");
+  background-size: cover;
+}
+
+/* line 457, ../sass/screen.scss */
+.form-input {
+  width: 353px;
+  height: 46px;
+  background: transparent;
+  margin: 23.5px 12px 0px 0px;
+  color: #ffffff;
+  font-size: 13px;
+  padding-left: 14px;
+  border: 1px solid #ffffff;
+}
+
+/* line 468, ../sass/screen.scss */
+.form-input::placeholder, textarea::placeholder {
+  color: #ffffff;
+}
+
+/* line 471, ../sass/screen.scss */
+textarea {
+  background: transparent;
+  padding-top: 15px;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  height: 150px;
+  font-size: 13px;
+  color: #ffffff;
+  resize: none;
+  margin-top: 30px;
+}
+
+/* line 483, ../sass/screen.scss */
+.align-center {
+  text-align: center;
+}
+
+/* line 486, ../sass/screen.scss */
+footer {
+  padding-top: 66px;
+  background-color: #000000;
+}
+/* line 489, ../sass/screen.scss */
+footer h6 {
+  color: #ffffff;
+}
+
+/* line 493, ../sass/screen.scss */
+.footericon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #212121;
+  display: block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* line 502, ../sass/screen.scss */
+.newsletter-input {
+  padding-left: 13px;
+  width: 240px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  margin-top: 30px;
+  border-right: none;
+  margin-left: 0px;
+}
+
+/* line 511, ../sass/screen.scss */
+.newsletter-btn {
+  width: 98px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 900;
+  margin-top: 30px;
+  margin-left: -3px;
+  padding-top: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #ffa500;
+  border-left: none;
+}
+
+/* line 525, ../sass/screen.scss */
+.useful-links-list li {
+  display: block;
+  width: 100%;
+  padding-left: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 8px;
+  padding-top: 2px;
+}
+
+/* line 535, ../sass/screen.scss */
+.useful-links-list li:before {
+  content: '';
+  float: left;
+  display: block;
+  position: relative;
+  margin-right: 8px;
+  top: 13px;
+  border-radius: 50%;
+  height: 4px;
+  width: 4px;
+  background-color: #ffa500;
+  margin-left: 2px;
+}
+
+/* line 548, ../sass/screen.scss */
+time {
+  color: #9b9b9b;
+  font-size: 12px;
+}
+
+/* line 552, ../sass/screen.scss */
+article:hover time {
+  padding-left: 10px;
+  transition: 0.3s all;
+}
+
+/* line 556, ../sass/screen.scss */
+article:hover .latest-news-heading {
+  color: #ffa500;
+}
+
+/* line 559, ../sass/screen.scss */
+.latest-news-heading {
+  font-weight: 400;
+  letter-spacing: 0.0em;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1.47059;
+  margin-top: 5px;
+  margin-bottom: 18px;
+}
+
+/* line 568, ../sass/screen.scss */
+.color-white {
+  color: #ffffff;
+}
+
+/* line 571, ../sass/screen.scss */
+.main-btn-send {
+  margin-top: 25px;
+  width: 149.15px;
+}
+
+/* line 575, ../sass/screen.scss */
+.rounded-border {
+  border-radius: 5px;
+}
+
+/* line 578, ../sass/screen.scss */
+.main-btn-agents {
+  margin-top: 66px;
+  width: 170px;
+}
+
+/* line 582, ../sass/screen.scss */
+.main-btn-agents.rounded-border, .main-btn-send.rounded-border, .main-btn-prop.rounded-border, .slider-button.rounded-border {
+  border-color: #ffa500;
+}
+
+/* line 585, ../sass/screen.scss */
+h6 {
+  color: #434345;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.47059;
+  margin-top: 10px;
+}
