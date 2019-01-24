@@ -16,6 +16,7 @@
   }
 $font: 'lato', Helvetica, Arial, sans-serif;
 /*---Media Queries --*/
+
 @media (min-width:1200px){ 
     header .container-fluid{
         max-width: 1140px;
@@ -32,26 +33,26 @@ $font: 'lato', Helvetica, Arial, sans-serif;
     .top-list{
         display: none;
     }
-}
-@media (min-width: 768px) {
-   navbar-nav{
-       width: 30%;
-       height: 100%;
-   }
-}
-@media (min-width: 576px) {
-    navbar-nav{
-        width: 30%;
-        height: 100%;
+    .fixed-top{
+        height: 60px;
     }
 }
-.fixed-top{
+@media (min-width: 768px) {
+}
+.fixed-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding-left: 11.5%!important;
+    padding-right: 11.5%!important;
+    z-index: 1030;
     background-color: #ffffff;
+    box-shadow: 0 3px 11px 0 rgba(0,0,0,.15);
 }
 .top-list{
     top:40px;
     right: 0px;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     background-color: #ffffff;
     padding: 10px;
@@ -61,19 +62,15 @@ $font: 'lato', Helvetica, Arial, sans-serif;
     }
 }
 .menu-rd{
-    height: 100%;
-    top:40px;
+    //height: 100%;
     left: 0;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     background-color: #ffffff;
     width: 300px;
-    transition: 0.3s width;
+    //transition: 0.3s width;
     li{
         margin: 10px 5px;
-    }
-    ul{
-        height: 100%;
     }
 }
 /*--- Bootstrap Padding Fix --*/
@@ -84,6 +81,10 @@ $font: 'lato', Helvetica, Arial, sans-serif;
 button{
     background-color: #ffa500;
     color: white;
+    cursor: pointer;
+}
+button:hover:not(.navbar-toggler){
+    background-color: #ff7e00;
 }
 html{
     overflow-x: hidden;
@@ -105,7 +106,14 @@ a{
     float: left;
     a{
         margin-right: 15px;
+        color: #9b9b9b;
     }
+}
+a.nav-link{
+    color: #000000!important;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
 }
 .navbar{
     padding: 0;
@@ -136,16 +144,21 @@ a{
     border-radius: 50%;
     width: 13px;
     height: 13px;
-    margin-right: 15px;
+    margin-right: 20px;
     transition: 0.3s all;
     background: transparent;
     border: 2px solid #ffffff;
 }
-.carousel-indicators li:hover:not(.testi li){
+.carousel-indicators li:hover{
     transform: scale(1.4);
+}
+.slider-active{
+    transform: scale(1.4);
+    background-color: #ffffff!important;
 }
 .nav-item{
     color: #000000!important;
+    margin-left: 20px;
     a:after, #first:after{
         display: block;
         content: '';
@@ -181,12 +194,35 @@ a:hover{
 }
 .slider-nav li:nth-of-type(n+2):before{
     content: '';
-  border-left: 1px solid #9b9b9b;
-  position: relative;
-  margin-right: 20px;
+    border-left: 1px solid #9b9b9b;
+    position: relative;
+    margin-right: 20px;
 }
 .carousel-caption{
-    bottom: 230px;
+    top: 30%;
+    bottom: 190px;
+}
+.carousel-controls{
+    position: relative;
+    color: #ffffff;
+    background-color: #000000!important;
+    height: 30px;
+    width: 40px;
+    bottom: 10%;
+}
+.interval{
+    visibility: hidden;
+    height: 10px;
+    width: 0%;
+    position: absolute;
+    bottom: 3px;
+    background-color: #c4c4c4;
+    border-radius: 5px;
+    
+}
+.interval-fill{
+    transition: 5s all ease-in-out;
+    width: 100%;
 }
 .slider-input{
     height: 50px;
@@ -209,6 +245,7 @@ a:hover{
 h1{
     font-size: 45px;
     font-weight: 700;
+    height: fit-content;
 }
 .col-sm-10.col-lg-7.col-xl-6{
     margin-top: 40px;
@@ -312,6 +349,7 @@ hr:not(.tophr){
 .prop-name{
     display: block;
     font-weight: 700;
+    font-size: 23px;
     color: #ffa500;
     padding-top: 25px;
 }
@@ -376,7 +414,10 @@ hr:not(.tophr){
 .icon-mail:before{
   position: relative;
   vertical-align: middle;
-  top: 5px;
+  top: 7px;
+}
+.icon-mail:before{
+    top: 9px;
 }
 .icons-chat:before,
 .icons-star:before,
@@ -486,7 +527,7 @@ hr:not(.tophr){
 #reviewer{
     color: #434345;
     display: block;
-    position: absolute;
+    position: relative;
     font-weight: 700;
     line-height: 1.5;
     font-size: 16px;
@@ -504,7 +545,7 @@ hr:not(.tophr){
     width: 80px;
     height: 80px;
     display: block;
-    margin-right: 20px;
+    margin-right: 5px;
 }
 .testimonial:before{
     background-image: url("../images/small1.png");
@@ -593,13 +634,11 @@ footer{
     font-size: 15px;
     font-weight: 900;
     margin-top: 30px;
-    margin-left: -3px;
     padding-top: 0px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border: 1px solid #ffa500;
     border-left: none;
-    
 }
 .useful-links-list li{
     display: block;
@@ -667,4 +706,56 @@ h6{
     font-size: 17px;
     line-height: 1.47059;
     margin-top: 10px;
+}
+.active-white{
+    color: #ffffff!important;
+}
+
+// Responsive------
+@media (min-width: 300px){
+    .slider-nav li{
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    .slider-nav li:nth-of-type(n+2):before{
+        margin-right: 5px;
+    }
+    
+}
+@media (max-width: 420px){
+    .slider-input{
+        width: 100%;
+    }
+    .slider-button{
+        min-width: 100%;
+    }
+}
+@media(max-width: 380px){
+    .navbar-brand{
+        display: none;
+    }
+    .newsletter-input{
+        width: 150px;
+    }
+    .newsletter-btn{
+        width: 90px;
+    }
+}
+@media (max-width: 576px){
+    .carousel-caption{
+        top: 18%;
+    }
+}
+@media (min-width: 576px) {
+    .slider-nav li{
+        margin-right: 20px;
+    }
+    .slider-nav li:nth-of-type(n+2):before{
+        margin-right: 20px;
+    }
+}
+@media (max-width: 1180px){
+    .fixed-top{
+        padding:0!important;
+    }
 }
