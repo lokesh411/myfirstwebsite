@@ -1,4 +1,4 @@
-let bimages=["url(../myfirstwebsite/images/image1.jpg)","url(../myfirstwebsite/images/image2.jpg)","url(../myfirstwebsite/images/image3.jpg)"];
+let bimages=["url(../myfirstwebsite/images/image2.jpg)","url(../myfirstwebsite/images/image1.jpg)","url(../myfirstwebsite/images/image3.jpg)"];
 let slidernav = document.querySelector('.slider-nav-bg');
 //-------placeholder-change-------------
   let sale=document.querySelector('#sale');
